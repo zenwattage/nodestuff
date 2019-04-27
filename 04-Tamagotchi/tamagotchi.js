@@ -33,7 +33,12 @@ function DigitalPal(hungry,sleepy,bored,age) {
   //sleep()
   this.sleep = function() {
     if(this.sleepy === true) {
-
+      console.log('Zzzzzzzz');
+      this.sleepy = false;
+      this.bored = true;
+      increaseAge();
+    } else {
+      console.log("Not right now. Later?");
     }
 
   }
